@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7f5;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background-color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffe0da;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: tomato;
+}
+
+.logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    gap: 22px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #444;
+}
+
+.links a:hover {
+    color: tomato;
+}
+
+/* Welcome section */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.welcome {
+    background-color: tomato;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.tag {
+    font-size: 12px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.welcome h1 {
+    margin-bottom: 12px;
+}
+
+.student {
+    text-align: center;
+    min-width: 100px;
+}
+
+.avatar {
+    background-color: white;
+    color: tomato;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+}
+
+/* Overview cards */
+.section-title {
+    margin: 30px 0 18px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #ffe0da;
+}
+
+.card h2 {
+    color: tomato;
+    margin-top: 15px;
+}
+
+/* Subject cards */
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.subject {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    border-left: 4px solid tomato;
+}
+
+.subject span {
+    color: tomato;
+    font-weight: bold;
+}
+
+.subject h3 {
+    margin: 12px 0;
+}
+
+.subject p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Timetable */
+.schedule {
+    background-color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+}
+
+.schedule p {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule p:last-child {
+    border-bottom: none;
+}
+
+.schedule strong {
+    color: tomato;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    color: #777;
+    border-top: 1px solid #ffe0da;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .welcome {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 22px;
+    }
+
+    .student {
+        display: none;
+    }
+
+    .welcome h1 {
+        font-size: 24px;
+    }
+
+    .stats,
+    .subjects {
+        grid-template-columns: 1fr;
+    }
+}
