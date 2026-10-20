@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone | Electronics Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Tech<span>Zone.</span></h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#compare">Compare</a>
+            </div>
+
+            <a href="#products" class="nav-btn">Explore Store</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero-text">
+            <p class="tag">YOUR WORLD OF TECHNOLOGY</p>
+            <h1>Upgrade Your<br>Digital Lifestyle.</h1>
+            <p>
+                Discover powerful laptops, smart phones and
+                the latest gadgets at amazing prices.
+            </p>
+            <a href="#products" class="shop-btn">Shop Now →</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+              src="https://images.stockcake.com/public/5/b/f/5bf23fc1-a6c4-43eb-a5a2-c0c67090061b_large/connected-tech-gadgets-stockcake.jpg"width="600" height="400"   
+              alt="Modern electronic gadgets">
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories" id="categories">
+        <h2>Shop by Category</h2>
+        <p class="subtitle">Find the perfect device for you.</p>
+
+        <div class="category-grid">
+            <a href="#laptops" class="category">💻 <span>Laptops</span></a>
+            <a href="#phones" class="category">📱 <span>Smartphones</span></a>
+            <a href="#accessories" class="category">🎧 <span>Accessories</span></a>
+            <a href="#smart" class="category">⌚ <span>Smart Devices</span></a>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div class="products" id="products">
+        <h2>Featured Products</h2>
+        <p class="subtitle">Explore our latest technology collection.</p>
+
+        <div class="filters">
+            <a href="#products" class="active">All Products</a>
+            <a href="#laptops">Laptops</a>
+            <a href="#phones">Phones</a>
+            <a href="#accessories">Accessories</a>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card" id="laptops">
+                <span class="discount">-15% OFF</span>
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"
+                     alt="Laptop">
+                <p class="product-type">LAPTOPS</p>
+                <h3>UltraBook Pro</h3>
+                <p class="spec">16GB RAM · 512GB SSD</p>
+                <p class="price">₹59,999 <del>₹69,999</del></p>
+                <a href="#compare" class="product-btn">View Details</a>
+            </article>
+
+            <article class="product-card" id="phones">
+                <span class="discount">-10% OFF</span>
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                     alt="Smartphone">
+                <p class="product-type">SMARTPHONES</p>
+                <h3>SmartPhone X</h3>
+                <p class="spec">256GB · OLED Display</p>
+                <p class="price">₹26,999 <del>₹29,999</del></p>
+                <a href="#compare" class="product-btn">View Details</a>
+            </article>
+
+            <article class="product-card" id="accessories">
+                <span class="discount">-20% OFF</span>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                     alt="Wireless headphones">
+                <p class="product-type">ACCESSORIES</p>
+                <h3>Wireless Headphones</h3>
+                <p class="spec">Bluetooth · Noise Isolation</p>
+                <p class="price">₹3,999 <del>₹4,999</del></p>
+                <a href="#compare" class="product-btn">View Details</a>
+            </article>
+
+            <article class="product-card" id="smart">
+                <span class="discount">-12% OFF</span>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" 
+                <p class="product-type">SMART DEVICES</p>
+                <h3>SmartWatch Fit</h3>
+                <p class="spec">Fitness Tracking · Bluetooth</p>
+                <p class="price">₹4,399 <del>₹4,999</del></p>
+                <a href="#compare" class="product-btn">View Details</a>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- Product Comparison -->
+    <div class="comparison" id="compare">
+        <h2>Compare Products</h2>
+        <p class="subtitle">Check the specifications before choosing.</p>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Specifications</th>
+                    <th>UltraBook Pro</th>
+                    <th>SmartPhone X</th>
+                    <th>SmartWatch Fit</th>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Laptop</td>
+                    <td>Smartphone</td>
+                    <td>Smart Device</td>
+                </tr>
+                <tr>
+                    <td>Memory / Storage</td>
+                    <td>16GB / 512GB</td>
+                    <td>8GB / 256GB</td>
+                    <td>4GB / 32GB</td>
+                </tr>
+                <tr>
+                    <td>Connectivity</td>
+                    <td>Wi-Fi, Bluetooth</td>
+                    <td>5G, Wi-Fi</td>
+                    <td>Bluetooth</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>₹59,999</td>
+                    <td>₹26,999</td>
+                    <td>₹4,399</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h2>TechZone.</h2>
+        <p>Your trusted destination for modern technology.</p>
+        <p>© 2026 TechZone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
